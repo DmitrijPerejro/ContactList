@@ -8,6 +8,8 @@
 import Foundation
 
 final class DataStore {
+    static let service = DataStore()
+    
     private var names = [
         "Bob",
         "Dilan",
@@ -88,7 +90,5 @@ final class DataStore {
         emails.shuffle()
         phones.shuffle()
     }
-    
-    static let service = DataStore()
 }
 
